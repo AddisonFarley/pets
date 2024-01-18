@@ -10,11 +10,12 @@ require_once ('vendor/autoload.php');
 $f3 = Base::instance(); //static method
 
 //define a default route
-$f3->route('GET /', function () {
+$f3->route('GET /', function ()
+{
     //display view page
-    echo "Pet Home";
-//    $view = new Template();
-//    echo $view->render('views/home.html');
+//    echo "Pet Home";
+    $view = new Template();
+    echo $view->render('views/home.html');
 });
 
 //run fat-free
